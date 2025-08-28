@@ -1,0 +1,82 @@
+name: hashkart
+description: A complete eCommerce app built with Flutter.
+publish_to: "none" # This is a private app, not to be published on pub.dev.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core Flutter packages
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.7
+  google_fonts: ^6.1.0
+
+  # State management
+  provider: ^6.1.1
+
+  # HTTP
+  http: ^1.2.1
+
+  # Navigation
+  go_router: ^13.0.0
+
+  # Storage
+  shared_preferences: ^2.2.2
+
+  # UI & Animations
+  carousel_slider: ^4.2.1
+  smooth_page_indicator: ^1.1.0
+  flutter_staggered_grid_view: ^0.7.0
+  lottie: ^2.7.0
+
+  # Firebase (Optional)
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.6
+
+  # Utilities
+  intl: ^0.19.0
+  url_launcher: ^6.3.0
+  cached_network_image: ^3.3.1
+  share_plus: ^7.2.2
+
+  # Payment Integration - Razorpay (Best for India)
+  razorpay_flutter: ^1.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+
+dependency_overrides:
+  fluttertoast: ^8.2.12
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/app_logo.png
+#    - assets/images/
+#    - assets/icons/
+#    - assets/lottie/
+#    - assets/fonts/
+    - assets/animations/
+
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: assets/fonts/Inter-Regular.ttf
+  #       - asset: assets/fonts/Inter-Bold.ttf
+  #       - asset: assets/fonts/Inter-SemiBold.ttf
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_logo.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/app_logo.png"
+

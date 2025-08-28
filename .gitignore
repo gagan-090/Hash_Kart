@@ -150,5 +150,11 @@ static/
 .DS_Store
 Thumbs.db
 
-# Flutter/Dart (HashKart directory)
-HashKart/
+# Flutter/Dart specific ignores
+HashKart/build/
+HashKart/.dart_tool/
+HashKart/.flutter-plugins
+HashKart/.flutter-plugins-dependencies
+HashKart/.metadata
+HashKart/.packages
+HashKart/pubspec.lock
